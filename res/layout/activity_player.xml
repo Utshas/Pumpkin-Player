@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Player" >
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/btPlay"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btFB"
+        android:layout_centerHorizontal="true"
+        android:text="ll" />
+
+    <Button
+        android:id="@+id/btFB"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar1"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/btPlay"
+        android:text="&lt;&lt;" />
+
+    <Button
+        android:id="@+id/btFF"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btPlay"
+        android:layout_alignBottom="@+id/btPlay"
+        android:layout_toRightOf="@+id/btPlay"
+        android:text=">>" />
+
+    <Button
+        android:id="@+id/btPv"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btFB"
+        android:text="l&lt;" />
+
+    <Button
+        android:id="@+id/btNxt"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btFF"
+        android:layout_alignBottom="@+id/btFF"
+        android:layout_alignRight="@+id/seekBar1"
+        android:text=">l" />
+
+</RelativeLayout>
